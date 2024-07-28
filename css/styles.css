@@ -6,9 +6,12 @@ body {
 
 }
 .container {
-   max-width: 1158px;
+   /* width: 1158px;
    padding-left: 15px;
-   padding-right: 15px;
+   padding-right: 15px; */
+   width: 320px;
+   padding-left: 16px;
+   padding-right: 16px;
    margin: 0 auto;
 }
 p,h1,h2,h3,h4,h5,h6 {
@@ -35,11 +38,12 @@ ul {
 .container {
    max-width: 1158px;
    margin: 0 auto;
-   padding: 24px 0;
+   
 }
 .header-container {
    display: flex;
    align-items: center;
+   padding: 24px 0;
 
 }
 
@@ -142,11 +146,6 @@ ul {
     color: #404BBF;
 }
 /* section 1 */
-.container {
-   max-width: 1158px;
-   margin: 0 auto;
-   padding: 0 15px;
-}
 
 .page-title {
    background-image: linear-gradient(to bottom,
@@ -157,22 +156,30 @@ ul {
       background-position: center;
       background-size: cover;
     background-color: #2E2F42;
-    max-width: 1440px;
-    min-width: 1158px;
-    margin: 0 auto;
-    padding: 188px 0;
+   max-width: 1440px;
+      /* min-width: 1158px; */
+}
+.page-container {
+   margin: auto;
+   /* padding: 188px 0; */
+   padding: 72px 0;
 }
 .title {
     font-family: "Roboto", sans-serif;
-    font-size: 56px;
+    /* font-size: 56px; */
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
-    max-width: 496px;
+    /* max-width: 496px; */
+    width: 216px;
     margin: auto;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px ;
+    text-align: center;
+    padding: 0;
     
 }
 .reservation {
@@ -197,11 +204,7 @@ ul {
     background-color: #404BBF;
 }
 /* section2 */
-.container {
-   max-width: 1158px;
-   margin: 0 auto;
-   padding: 0 15px ;
-}
+
 .benefites-div {
    display: flex;
    align-items: center;
@@ -222,14 +225,17 @@ ul {
 }
 
 .benefites {
-   padding: 120px 0;
+   padding: 96px 0;
+   /* padding: 120px 0; */
 }
 .benefites-title {
    display: flex;
-   gap: 24px;
+   flex-wrap: wrap;
+   gap: 72px;
+   /* gap: 24px; */
 }
 .benefites-item {
-   width: calc((100% - 2 * 24px) / 3);
+   /* width: calc((100% - 2 * 24px) / 3); */
    
 }
 .icon-list {
@@ -242,7 +248,8 @@ ul {
 }
 
 .benefites-icon {
-   display: flex;
+   /* display: flex; */
+   display: none;
    align-items: center;
    justify-content: center;
    border: 1px solid #8e8f99;
@@ -262,20 +269,23 @@ ul {
 
  .benefites-title .titles {
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 36px;
+    /* font-size: 20px; */
     font-weight: 500;
     line-height: 1.2;
     color: #2E2F42;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
     
     
  }
  .benefites-title .text {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    /* font-weight: 400; */
+    font-weight: 500;
     line-height: 1.5;
     color: #434455;
     line-height: 1.5;
@@ -285,19 +295,41 @@ ul {
     
  }
  /* < !-- Section 3 --> */
- .container {
+ /* .container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
- }
+ } */
  .team-title {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    
+    
 
+ }
+ .team-container {
+   /* padding: 120px 0; */
+   padding: 96px 28px;
  }
  .title-team {
    margin-bottom: 72px;
  }
+ .cadrs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
+    flex-direction: row;
+    /* gap: 24px; */
+    
+ }
+ .cadr-icon {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    flex-direction: row;
+ }
+ 
  .team-title .title-team {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -309,28 +341,28 @@ ul {
     text-transform: capitalize;
    
  }
- .cadrs {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 24px;
  
- }
  .foto  {
     width: 264px;
     height: 428px;
     background-color: #FFFFFF;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     border-radius: 0 0 4px 4px;
-    width: calc((100% - 3 * 24px) / 4);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    align-items: center;
+    justify-content: center;
+    
+    /* width: calc((100% - 3 * px) / 4); */
+   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+   0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 2px 1px rgba(46, 47, 66, 0.08);
+      0px 2px 1px rgba(46, 47, 66, 0.08); */
      
  }
  .info {
     padding: 32px 0;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     text-align: center;
    
    
@@ -357,16 +389,16 @@ ul {
     
  }
  
+ 
  .icon-lists {             
    width:40px;
-   height:40px;
+   height:40px;   
  }
 
  .li-icon {
    display:flex;
    width:100%;
    height:100%;
-
    align-items:center;
    justify-content:center;
    border-radius:50%;
@@ -386,8 +418,8 @@ ul {
  
  .portfolio-title {
     background-color: #fff;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding: 120px 0; */
+    padding: 96px 16px ;
     
  }
  .title-port {
@@ -395,9 +427,11 @@ ul {
  }
  .app-title {
     display: flex;
-    gap: 24px;
+   justify-content: center;
+    /* gap: 24px; */
     flex-wrap: wrap;
     row-gap: 48px;
+    /* row-gap: 40px; */
     
    
  }
@@ -406,7 +440,7 @@ ul {
     overflow: hidden;
     
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: calc((100% - 2 * 24px) / 3);
+    /* width: calc((100% - 2 * 24px) / 3); */
     
  }
  .card:hover,
@@ -484,26 +518,34 @@ ul {
 
  }
  /* footer  */ 
+ .foot {
+    background-color: #2E2F42;
+   
+ }
  .footer-div {
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+     /* padding: 100px 0;  */
+      padding: 96px 16px;
     
  }
  .footer-logo {
+   width: 288px;
+   height: 112px;
    display: block;
-   align-items: baseline;
-   margin-right: 120px;
-   
-
- }
- .foot {
-    background-color: #2E2F42;
-    padding: 100px 0;
+   margin-bottom: 72px;
+   text-align: center;
+   /* margin-right: 120px; */
  }
  
+ 
  .foot .foot-logo {
+   
     display: inline-block;
+    
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -525,6 +567,9 @@ ul {
     color: #F4F4FD;
  }
  .foot .foot-text {
+   /* width: 264px; */
+    width: 288px;
+    height: 72px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -532,12 +577,11 @@ ul {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     
-    width: 264px;
-
  }
  
  .foot-soc-media {
     display: block;
+    margin-bottom: 72px;
     
  }
  .title-media {
@@ -547,6 +591,7 @@ ul {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
  }
  
  .footer-social {
@@ -584,7 +629,7 @@ ul {
  
  .footer-div-form {
    
-   margin-left: auto;
+   /* margin-left: auto; */
  }
 
  .footer-form-title {
@@ -596,15 +641,18 @@ ul {
     text-align: left;
     color: #FFFFFF;
     margin-bottom: 16px;
+    text-align: center;
     
  }
  .footer-form {
    display: flex;
+   flex-wrap: wrap;
    gap: 24px;
  }
  
  .footer-input  {
-    width: 264px;
+    /* width: 264px; */
+    width: 288px;
     height: 40px;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
@@ -642,7 +690,7 @@ ul {
     padding: 8px,16px,8px,24px;
     color: #FFFFFF;
     background-color: #4D5AE5;
-   font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.04em;
     line-height: 1.5;
@@ -650,6 +698,7 @@ ul {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin: 0 auto;
    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
  }
@@ -920,4 +969,133 @@ ul {
 .btn-submit:hover,
 .btn-submit:focus {
    background-color: #404BBF;
+}
+@media screen and (min-width:768px) {
+   .container {
+      width: 768px;
+   }
+   .page-container {
+      padding: 112px 0;
+   }
+   .title {
+      font-size: 56px;
+      width: 496px;
+      margin-bottom: 36px;
+   }
+    .benefites-title {
+       gap: 72px 24px;
+    }
+   .benefites-title .text {
+      width: 356px;
+   }
+   .benefites-item {
+      width: calc((100% - 24px) / 2);
+   }
+   .benefites-title .titles {
+      text-align: start;
+   }
+  .team-container {
+     padding: 96px 108px;
+  }
+  .cadrs {
+   gap: 24px;
+  }
+  .app-title {
+   gap: 24px;
+   row-gap: 72px;
+  }
+  .card {
+   width: calc((100% -  24px) / 2);
+  }
+  .footer-div {
+   padding: 96px 108px;
+   gap: 24px;
+  }
+  .footer-logo {
+   text-align: start;
+  }
+  .foot .foot-text {
+   width: 264px;
+  }
+  .title-media {
+   text-align: start;
+  }
+  .footer-form-title {
+   text-align: start;
+  }
+
+}
+@media screen and (min-width:1158px) {
+   .container {
+      width: 1158px;
+      padding: 120px 0;
+   }
+    .page-container {
+      padding: 188px 0;
+   }
+   .title {
+      font-size: 56px;
+      width: 496px;
+      margin-bottom: 48px;
+   }
+   .benefites-title {
+      flex-wrap: nowrap;
+      gap: 24px;
+      
+   }
+   .benefites-item {
+     
+   }
+   .benefites-item {
+      width: calc((100% - 2 * 24px) / 3);
+     
+   }
+   .benefites-icon {
+      display: flex;
+   }
+   .benefites-title .titles {
+      font-size: 20px;
+   }
+   .benefites-title .text {
+      font-size: 16px;
+      font-weight: 400;
+      width: 264px;
+   }
+   .team-container {
+     padding: 120px 0;
+  }
+
+  .foto {
+   width: calc((100% - 3 * px) / 4);
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .portfolio-title {
+   padding: 120px 0;
+  }
+  .app-title {
+   row-gap: 40px;
+  }
+  .card {
+   width: calc((100% - 2 * 24px) / 3);
+  }
+   .footer-div {
+    padding: 100px 0;
+    align-items: baseline;
+    gap: 0;
+  }
+  .footer-logo {
+   
+   width: 264px;
+   height: 112px;
+   margin-right: 120px;
+  }
+  
+  .footer-div-form {
+   margin-left: auto;
+  }
+  .footer-input {
+   width: 264px;
+  }
 }
