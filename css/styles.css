@@ -1113,6 +1113,7 @@ text-decoration: none;
    justify-content: center;
    fill: transparent;
    margin-right: 8px;
+   
  }
  
  .modal-check:checked + .modal-check-text .icon-commets {
@@ -1121,6 +1122,7 @@ text-decoration: none;
    fill: #f4f4fd;
    border: none;
  }
+ 
 .privacy-link {
    
     font-size: 12px;
@@ -1369,6 +1371,8 @@ text-decoration: none;
          color: rgba(142, 143, 153, 1);
          align-items: center;
          gap: 8px;
+         display: flex;
+         align-items: center;
       }
    
       .icon-commets {
@@ -1382,6 +1386,7 @@ text-decoration: none;
          justify-content: center;
          fill: transparent;
          margin-right: 8px;
+         flex-shrink: 0;
       }
    
       .modal-check:checked+.modal-check-text .icon-commets {
